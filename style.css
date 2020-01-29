@@ -36,5 +36,25 @@ body {
 /* carousel  */
 .carousel-item {
     height: 100vh;
-    background-repeat: no-repeat;
+    max-height: 1080px;
+    background-repeat: no-repeat ;
+    background-position: center;
 }
+
+/* Portfolio */
+.jumbotron .heading {
+    text-decoration: underline rgb(185, 21, 21); ;
+    text-underline-position: under;
+}
+
+/* Bootstrap breakpoints
+
+Small devices (sm), landscape phones, 576px and up
+
+Medium devices (md), tablets, 768px and up
+
+Large devices (lg), desktops, 992px and up
+
+Extra large devices (xl), large desktops, 1200px and up
+
+*/
