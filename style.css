@@ -42,9 +42,14 @@ body {
 }
 
 /* Portfolio */
-.jumbotron .heading {
-    text-decoration: underline rgb(185, 21, 21); ;
-    text-underline-position: under;
+.jumbotron .heading:after {
+    content: '';
+    display: block; /* This will put the element on its own line. */
+    width: 25%; 
+    padding-top: 15px;
+    margin: 0 auto; /* This will center the element */
+    border-bottom: 3px solid rgb(185, 21, 21);
+    border-radius: 3px;
 }
 
 /* Bootstrap breakpoints
