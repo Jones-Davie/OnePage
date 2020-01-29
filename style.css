@@ -41,8 +41,8 @@ body {
     background-position: center;
 }
 
-/* Portfolio */
-.jumbotron .heading:after {
+/* Heading */
+.heading:after {
     content: '';
     display: block; /* This will put the element on its own line. */
     width: 25%; 
@@ -51,6 +51,20 @@ body {
     border-bottom: 3px solid rgb(185, 21, 21);
     border-radius: 3px;
 }
+
+/* col-12 doesn't display padding for some reason */
+.col-12 {
+    padding: 15px;
+}
+
+/* make an offset class to jump to the different sections of the page  */
+.offset:before {
+    content:'';
+    display: block;
+    height: 65px;
+    margin-top: -65px;
+}
+
 
 /* Bootstrap breakpoints
 

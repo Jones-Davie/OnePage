@@ -10,10 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- end fix for different devices  -->
 
-        <!-- import Bootstrap and own css -->
+        <!-- import Bootstrap Fontawesome and own css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-        <!-- end import Bootstrap and own css -->
+        <!-- end import Fontawesome Bootstrap and own css -->
 
     </head>
 
@@ -32,16 +33,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto"> 
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Home </a>
+                        <a href="#home" class="nav-link"> Home </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Over Mij </a>
+                        <a href="#first-header" class="nav-link"> First Header </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Portfolio </a>
+                        <a href="#portfolio" class="nav-link"> Portfolio </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Contact </a>
+                        <a href="#contact" class="nav-link"> Contact </a>
                     </li>
                 </ul>
             </div>
@@ -94,73 +95,109 @@
             
         <!-- End Navbar Home -->
 
-        <!-- Navbar Over Mij -->
-        <div id="over-mij">
-            
+        <!-- Navbar First Header with cards -->
+        <div id="first-header" class="offset">
+            <div class="col-12 text-center padding">
+                <h3 class="heading"> Mooie kaartjes </h3>
+            </div>
+
+            <!-- Bootstrap Cards-->
+            <div class="row padding justify-content-center">
+                <div class="card text-center">
+                    <img class="card-img-top" src="img/bootstrap.png"/>
+                    <div class="card-body">
+                       <h4> text Header </h4>
+                       <p> Text onder een plaatje die mooi weergegeven wordt </p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="img/bootstrap.png"/>
+                    <div class="card-body">
+                       <h4> Text Header </h4>
+                       <p> Text onder een plaatje die mooi weergegeven wordt </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Bootstrap cards-->
+
         </div>
-        <!-- End Navbar Over Mij -->
+        <!-- End Navbar First Header with cards -->
 
         <!-- Navbar portfolio -->
-        <!-- Jumbotron Portfolio-->
-        <div id="portfolio" class="jumbotron container-fluid">
-            <h3 class="heading text-center"> Portfolio</h3>
+        
+        <div id="portfolio" class="offset">
+            <!-- Jumbotron Portfolio-->
+            <div class="jumbotron container-fluid">
+                <h3 class="heading text-center"> Portfolio</h3>
 
-            <!-- Portfolio items -->
-            <div class="row no-padding">
-                <div class="col-sm-4">
-                    <a href="img/less.png" target="_blank">
-                        <img src="img/sass.png" />
-                    </a>
+                <!-- Portfolio items -->
+                <div class="row no-padding">
+                    <div class="col-sm-4">
+                        <a href="img/less.png" target="_blank">
+                            <img src="img/sass.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="img/sass.png" target="_blank">
+                            <img src="img/sass.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="img/less.png" target="_blank">
+                            <img src="img/less.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="img/sass.png" target="_blank">
+                            <img src="img/sass.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="img/less.png" target="_blank">
+                            <img src="img/less.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <a href="img/sass.png" target="_blank">
+                            <img src="img/sass.png" />
+                        </a>
+                    </div>
                 </div>
+                <!-- End Portfolio item-->
 
-                <div class="col-sm-4">
-                    <a href="img/sass.png" target="_blank">
-                        <img src="img/sass.png" />
-                    </a>
+                <div class="narrow text-center">
+                    <p class="lead"> Klik hier voor de code van de site en van andere dingen waarvan je de code ook kan zien <br/> </p>
+                    <a class="btn btn-secondary btn-md" href="https://github.com/jones-davie" target="_blank"> CODE </a>
                 </div>
-
-                <div class="col-sm-4">
-                    <a href="img/less.png" target="_blank">
-                        <img src="img/less.png" />
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/sass.png" target="_blank">
-                        <img src="img/sass.png" />
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/less.png" target="_blank">
-                        <img src="img/less.png" />
-                    </a>
-                </div>
-
-                <div class="col-sm-4">
-                    <a href="img/sass.png" target="_blank">
-                        <img src="img/sass.png" />
-                    </a>
-                </div>
-
-
             </div>
-            <!-- End Portfolio item-->
-
-            <div class="narrow text-center">
-                <p class="lead"> Klik hier voor de code </p>
-                <a class="btn btn-secondary btn-md" href="https://github.com/jones-davie" target="_blank"> CODE </a>
-            </div>
- 
+            <!-- End Jumbotron Portfolio-->
         </div>
-        <!-- End Jumbotron Portfolio-->
         <!-- End Navbar portfolio -->
 
         <!-- Navbar Contact -->
-        <div id="contact">
+        <div id="contact" class="offset">
+            <footer class="text-light bg-dark">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <p> dit is de footer text dat boven de contactgegevens staat </p>
+                        <strong> Contactinfo </strong>
+                        <p> (000) 000 000 000 <br/> Straat-straat 000 <br/> 0000AB </p>
+                        <a href="#"> <i class="fa fa-facebook-square fa-2x" target="_blank"></i></a>
+                        <a href="#"> <i class="fa fa-twitter-square fa-2x" target="_blank"></i>  </a>
+                        <a href="#"> <i class="fa fa-linkedin-square fa-2x" target="_blank"></i>  </a>
+                    </div>
+                </div>
+            </footer>
             
         </div>
         <!-- End Navbar contact-->
+
+   
 
     </body>
 
