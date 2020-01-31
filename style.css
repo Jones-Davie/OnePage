@@ -124,6 +124,17 @@ footer {
 
 footer a {
     color: white;
+    font-size: 1rem;
+    margin: 1rem 0.5rem 0 0;
+}
+
+footer a:hover {
+    color: rgb(185, 21, 21);
+}
+
+.copy {
+    border: .1rem solid lightgrey;
+    border-radius: .1rem;
 }
 
 
