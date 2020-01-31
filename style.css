@@ -11,26 +11,26 @@ html, body {
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing:  .5px;
+    letter-spacing:  .1rem;
     background-color: rgba(0, 0, 0, .75)!important;
 }
 
 .navbar-brand img {
-    height: 40px;
-    padding-right: 14px;
+    height: 2.5rem;
+    padding-right: .9rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
-    padding-top: 10px;
+    padding-top: .6rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, 
 .navbar-dark .navbar-nav .nav-link.active
  {
     color:rgb(185, 21, 21);
-    padding-top: 10px;
-    border-bottom: .5px solid white;
+    padding-top: .7rem;
+    border-bottom: .1rem solid white;
 }
 
 /* carousel  */
@@ -44,25 +44,26 @@ html, body {
 .carousel-caption {
     position: absolute;
     top: 35%;
-    text-shadow: 0px 0px 30px darkgray;
+    /* width: 100%; left: 0; right: 0; could be used if the text was smaller*/
+    text-shadow: 0 0 1.8rem darkgray;
     text-transform: uppercase;
 }
 
 .carousel-caption h1 {
-    letter-spacing: 5px;
-    font-size: 40px;
+    letter-spacing: .3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
 }
 
 .carousel-caption h3 {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 /* Heading */
 .heading {
-    letter-spacing: 3px;
+    letter-spacing: .2rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -71,46 +72,58 @@ html, body {
     content: '';
     display: block; /* This will put the element on its own line. */
     width: 25%; 
-    padding-top: 15px;
+    padding-top: 1rem;
     margin: 0 auto; /* This will center the element */
-    border-bottom: 3px solid rgb(185, 21, 21);
-    border-radius: 3px;
+    border-bottom: .2rem solid rgb(185, 21, 21);
+    border-radius: .2rem;
 }
+
+/* cards */
+.card {
+    margin: 2rem;
+}
+
 
 /* portfolio */
 
 .jumbotron {
-    padding: 25px;
+    padding: 1.7rem 0 1.7rem;
+    border-radius: 0; /* get rid of rounded corners of jumbotron */
 }
-.portfolio img {
-    max-width: 100vw;
+
+#portfolio img {
     transition: .5s ease;
 }
 
-.portfolio img:hover {
-    transform: scale(2);
+#portfolio img:hover {
+    overflow: hidden;
+    transform: scale(1.1);
 }
 
-.portfolio .row.no-padding [class*=col-] {
+#portfolio .row.no-padding [class*=col-] {
     padding: 0;
 }
 
 /* col-12 doesn't display padding for some reason */
 .col-12 {
-    padding: 15px;
+    padding: .9rem;
 }
 
 /* make an offset class to jump to the different sections of the page  */
 .offset:before {
     content:'';
     display: block;
-    height: 65px;
-    margin-top: -65px;
+    height: 3.8rem;
+    margin-top: -2.8rem;
 }
 
 /* footer */
 footer {
-    padding: 25px;
+    padding: 1.6rem;
+}
+
+footer a {
+    color: white;
 }
 
 
