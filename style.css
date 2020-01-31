@@ -149,3 +149,33 @@ Large devices (lg), desktops, 992px and up
 Extra large devices (xl), large desktops, 1200px and up
 
 */
+
+/* 
+
+    reminders
+
+    * selects everying except :before :after. To select everying do *, *::before, *::after
+
+    box-sizing: border-box; makes the box scaling more absolute and easier to manage since the box scaling will include the content/padding/border instead of just content
+
+    selectors can be .portfolio img { } to adress children
+    selectors can be .portfolio > img { } to only adress direct children and not select an img of portfolio wrapped in a different div e.g. <div class="portfolio"> <div>  <img /> </div> </div>
+
+    selectors of a class can get siblings adjacent to another like .portfolio .box + .box, which will only select boxes adjacent to the first identified .box.
+    selectors of a class can get siblings adjacent to another like .portfolio .box ~ .box which will select every .box after the first identified .box in the wrapped section
+
+    you can select based on attributes like [target] which will only select html elements that use the target="" attribute
+    this can also be defined using a previous selector like a [target] or a [href]
+    this can also be specified further by selecting only e.g. a [href="thisparticularpage.com"], not that after the = sign a absolute match must be found and not a partial match. [href="this"] will not work.
+    [href|="this"] will select any href starting with a whole word "this" which can be separated by - signs
+    [href^="this"] will select any href starting with a partial work "this"
+    [href*="this"] will select any href containing the whole word "this" 
+    [href$="this"] will select any href ending with "this" which can be handy for finding specific file extensions
+
+    :after will activate anytime the selector before it has been activated. 
+    :before will do the same except it will show up before
+        with these you can Use content='' to add (empty) text or an url like content: url(someimg.png)
+        display:block to give it its own separate line
+        display: inline block; to give it a better placement next to it's :before/after element
+
+*/
